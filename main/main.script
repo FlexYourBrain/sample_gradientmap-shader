@@ -1,0 +1,70 @@
+
+local display = "/tank#gradient_display"
+local tank = "/tank#tank"
+local tankorig = "/tank#sprite"
+local card = "/card#card"
+local up = "tank_up" local down = "tank_down"
+local four = 0.875 local three = 0.625 local two = 0.375 local one = 0.125
+
+local function resume(self)
+
+
+	if self.isup then
+		sprite.play_flipbook(tank, up)
+		sprite.play_flipbook(tankorig, up)
+	else
+		sprite.play_flipbook(tank, down)
+		sprite.play_flipbook(tankorig, down)
+	end
+	self.isup = not self.isup
+
+
+end
+
+function init(self)
+
+
+	msg.post("@render:", "clear_color", { color = vmath.vector4(0.18, 0.21, 0.22, 1.0) })
+	self.isup = false
+	self.current_map = 4
+
+	timer.delay(4.0, true, resume) -- play loop tank animation up and down
+
+
+end
+
+local function cycle_maps(map) 
+	-- When the UI button is pressed a message is recieved to change position of UV being read from gradient texture atlas using tint w component
+
+	local function swap(gradient,row)
+		go.animate(tank, "tint.w", go.PLAYBACK_ONCE_FORWARD, row, go.EASING_LINEAR, 0.1)
+		go.animate(card, "tint.w", go.PLAYBACK_ONCE_FORWARD, row, go.EASING_LINEAR, 0.1)
+		sprite.play_flipbook(display, "gradient"..gradient)
+	end
+	if map >= 4 then
+		swap(map,one)
+		map = 1
+	elseif map == 3 then
+		swap(1,four)
+		map = 4
+	elseif map == 2 then
+		swap(map,three)
+		map = 3
+	else
+		swap(3,two)
+		map = 2
+	end
+
+	return map
+end 
+
+function on_message(self, message_id, message, sender)
+
+
+	if message_id == hash("cycle_gradients") then
+		self.current_map = cycle_maps(self.current_map)
+	end
+
+
+end
+

@@ -1,0 +1,138 @@
+animations {
+  id: "tank_up"
+  images {
+    image: "/assets/textures/animation/ARTank_001.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_002.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_003.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_004.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_005.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_006.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_007.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_008.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_009.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_010.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_011.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_012.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_013.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_014.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_015.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_016.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_017.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_018.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_019.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_020.png"
+  }
+  fps: 16
+}
+animations {
+  id: "card"
+  images {
+    image: "/assets/textures/ARcard_face.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 0
+}
+animations {
+  id: "tank_down"
+  images {
+    image: "/assets/textures/animation/ARTank_001.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_002.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_003.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_004.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_005.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_006.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_007.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_008.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_009.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_010.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_011.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_012.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_013.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_014.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_015.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_016.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_017.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_018.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_019.png"
+  }
+  images {
+    image: "/assets/textures/animation/ARTank_020.png"
+  }
+  playback: PLAYBACK_ONCE_BACKWARD
+  fps: 16
+}
+extrude_borders: 1

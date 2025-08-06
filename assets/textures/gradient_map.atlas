@@ -1,0 +1,63 @@
+images {
+  image: "/assets/textures/gradient1.png"
+}
+images {
+  image: "/assets/textures/gradient2.png"
+}
+images {
+  image: "/assets/textures/gradient3.png"
+}
+images {
+  image: "/assets/textures/gradient4.png"
+}
+animations {
+  id: "tank_up"
+  images {
+    image: "/assets/textures/gradient1.png"
+  }
+  images {
+    image: "/assets/textures/gradient2.png"
+  }
+  images {
+    image: "/assets/textures/gradient3.png"
+  }
+  images {
+    image: "/assets/textures/gradient4.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 0
+}
+animations {
+  id: "tank_down"
+  images {
+    image: "/assets/textures/gradient1.png"
+  }
+  images {
+    image: "/assets/textures/gradient2.png"
+  }
+  images {
+    image: "/assets/textures/gradient3.png"
+  }
+  images {
+    image: "/assets/textures/gradient4.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 0
+}
+animations {
+  id: "card"
+  images {
+    image: "/assets/textures/gradient1.png"
+  }
+  images {
+    image: "/assets/textures/gradient2.png"
+  }
+  images {
+    image: "/assets/textures/gradient3.png"
+  }
+  images {
+    image: "/assets/textures/gradient4.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 0
+}

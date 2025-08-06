@@ -1,0 +1,7 @@
+images {
+  image: "/assets/textures/bdown.png"
+}
+images {
+  image: "/assets/textures/bup.png"
+}
+extrude_borders: 2
